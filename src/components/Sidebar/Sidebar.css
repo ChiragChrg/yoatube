@@ -1,0 +1,40 @@
+.sidebar-main{
+    position: fixed;
+    left: 0;
+    height: 100%;
+    width: 15em;
+    padding: 1em 1.5em;
+    padding-top: 5em;
+    justify-content: start;
+    background-color: var(--primary);
+    transition: 0.3s ease-in-out;
+}
+
+[data-expand="false"]{
+    width: 6.3em;
+}
+
+[data-expand="false"] .sidebar-nav span{
+    display: none;
+}
+
+.sidebar-nav{
+    cursor: pointer;
+    width: 100%;
+    justify-content: start;
+    padding: 0.5em 0.7em;
+    border-radius: 0.5em;
+    transition: 0.2s ease-in-out;
+}
+
+.sidebar-nav .nav-icon svg{
+    display: block;
+}
+
+.sidebar-nav.active{
+    background-color: var(--secondary-alt);
+}
+
+.sidebar-nav:hover{
+    background-color: var(--secondary-alt);
+}

@@ -1,0 +1,49 @@
+:root{
+  --primary: #fff;
+  --secondary: #f2f2f2;
+  --secondary-alt: #dadada;
+  --text: #0f0f0f;
+  --logo: #ff0000;
+}
+
+[data-theme="dark"]{
+  --primary: #0f0f0f;
+  --secondary: #212121;
+  --secondary-alt: #282828;
+  --text: #f1f1f1;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col{
+  flex-direction: column;
+}
+
+.gap-05{
+  gap: 0.5em;
+}
+
+.gap-1{
+  gap: 1em;
+}
+
+.gap-2{
+  gap: 2em;
+}
+
+body{
+  background-color: var(--primary);
+  color: var(--text);
+  min-height: 150vh;
+}

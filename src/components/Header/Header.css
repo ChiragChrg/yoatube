@@ -1,0 +1,49 @@
+.header-main{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.5em 1.8em;
+    z-index: 1;
+    background-color: var(--primary);
+    justify-content: space-between;
+}
+
+.header-nav{
+    width: 16em;
+}
+
+.header-ham, .header-logo{
+    cursor: pointer;
+}
+
+.header-searchbar{
+    background-color: var(--secondary-alt);
+    justify-content: space-between;
+    padding: 0.2em 1em;
+    height: 2.5em;
+    width: 25em;
+    border-radius: 0.5em;
+}
+
+#search{
+    border: none;
+    outline: none;
+    background-color: var(--secondary-alt);
+    color: var(--text);
+    font-size: 1em;
+    height: 2em;
+}
+
+.header-searchbar .search-icon{
+    cursor: pointer;
+}
+
+.header-profile{
+    margin-left: 14em;
+    background-color: var(--secondary-alt);
+    padding: 0.5em;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
