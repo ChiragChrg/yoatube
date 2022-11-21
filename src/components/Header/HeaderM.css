@@ -1,0 +1,44 @@
+@media (max-width: 395px) {
+    .header-main{
+        width: 100%;
+        padding: 0.5em 1em;
+        z-index: 1;
+        gap: 1em;
+        background-color: var(--primary);
+        justify-content: space-between;
+    }
+    
+    .header-nav .header-ham,
+    .header-nav .header-logo h1{
+        display: none;
+    }
+
+    .header-searchbar{
+        background-color: var(--secondary-alt);
+        justify-content: space-between;
+        padding: 0.2em 1em;
+        height: 2.2em;
+        /* width: 15em; */
+        border-radius: 0.5em;
+    }
+    
+    #search{
+        border: none;
+        outline: none;
+        background-color: var(--secondary-alt);
+        color: var(--text);
+        font-size: 1em;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .header-profile{
+        background-color: var(--secondary-alt);
+        padding: 0.5em;
+        border-radius: 100%;
+    }
+    
+    .header-profile .profile-icon svg{
+        display: block;
+    }
+}

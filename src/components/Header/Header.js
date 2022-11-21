@@ -1,4 +1,5 @@
 import "./Header.css"
+import "./HeaderM.css"
 import {HiMenuAlt1, HiSearch} from "react-icons/hi"
 import {BsYoutube} from "react-icons/bs"
 import {AiOutlineUser} from "react-icons/ai"
@@ -7,7 +8,6 @@ const Header = ({setToggleNav}) => {
   return (
     <div className="header-main flex">
         <div className="header-nav flex gap-2">
-
             <div className="header-ham flex" onClick={()=>setToggleNav(prevState => !prevState)}>
                 <HiMenuAlt1 color="var(--text)" size={35}/>
             </div>
@@ -19,12 +19,14 @@ const Header = ({setToggleNav}) => {
         </div>
 
         <div className="header-searchbar flex">
-            <input type="text" placeholder="Search" id="search"/>
+            <input type="text" placeholder="Search" id="search" autoComplete="off"/>
             <HiSearch className="search-icon" color="var(--text)" size={25}/>
         </div>
 
         <div className="header-profile flex">
-            <AiOutlineUser color="var(--text)" size={25}/>
+            <div className="profile-icon">
+                <AiOutlineUser color="var(--text)" size={25}/>
+            </div>
         </div>
     </div>
   )

@@ -1,0 +1,31 @@
+@media (max-width: 395px){
+    .sidebar-main{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        padding: 0.8em 1em;
+        justify-content: space-evenly;
+        flex-direction: row;
+        background-color: var(--primary);
+        transition: 0.3s ease-in-out;
+    }
+    
+    .sidebar-nav span{
+        display: none;
+    }
+    
+    .sidebar-nav{
+        gap: 0 !important;
+        padding: 0.5em;
+        border-radius: 0.5em;
+        transition: 0.2s ease-in-out;
+    }
+    
+    .sidebar-nav .nav-icon svg{
+        display: block;
+    }
+    
+    .sidebar-nav.active{
+        background-color: var(--secondary-alt);
+    }   
+}
