@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Content = ({video}) => {
-    const {video_id, title, channel_id, number_of_views, timestamp, thumbnails} = video;
+    const {title, thumbnails} = video;
     var url = thumbnails[0].url;
     console.log(url);
   return (
