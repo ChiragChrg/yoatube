@@ -3,9 +3,8 @@
         position: fixed;
         left: 0;
         height: 100%;
-        width: 15em;
+        width: 14em;
         padding: 1em 1.5em;
-        padding-top: 5em;
         justify-content: start;
         background-color: var(--primary);
         transition: 0.3s ease-in-out;
