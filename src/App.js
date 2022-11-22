@@ -1,15 +1,15 @@
 import './App.css';
-import Header from './components/Header/Header';
-import Sidebar from './components/Sidebar/Sidebar';
 import Content from './components/Content/Content';
-
+import { BrowserRouter as Browser, Routes, Route } from "react-router-dom";
 function App() {
 
   return (
     <div className="App">
-      <Header />
-      <Sidebar />
-      <Content />
+      <Browser>
+        <Routes>
+          <Route path="/" element={<Content />} />
+        </Routes>
+      </Browser>
     </div>
   );
 }
