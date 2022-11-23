@@ -1,6 +1,7 @@
 .videocard-main{
     background-color: var(--primary);
     color: var(--text);
+    padding-bottom: 0.5em;
 }
 
 .videocard-main a{
@@ -13,12 +14,12 @@
     width: 100%;
 }
 
-.videocard-duration{
+.videocard-timestamp{
     position: absolute;
     bottom: 0.8em;
     right: 0.5em;
     font-size: 0.8em;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
     padding: 0 0.2em;
     border-radius: 0.2em;
 }
@@ -26,7 +27,7 @@
 .videocard-thumb img{
     width: 100%;
     border-radius: 0.5em;
-    clip-path: rect(0px,60px,200px,0px);
+    aspect-ratio: 16/9;
 }
 
 .videocard-info{
@@ -43,15 +44,19 @@
 }
 
 .videocard-avatar img{
-    min-width: 36px;
-    width: 100%;
+    cursor: pointer;
     border-radius: 100%;
 }
 
 .videocard-title{
     font-size: 0.8em;
     padding-left: 1em;
-    min-height: 2.25em;
+    /* min-height: 2.25em; */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .videocard-channel{

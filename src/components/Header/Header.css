@@ -1,4 +1,4 @@
-@media (max-width: 768px){
+@media (max-width: 850px){
     .header-nav{
         justify-content: start;
     }
@@ -30,7 +30,7 @@
     }
     
     .header-ham, .header-logo{
-        cursor: pointer;
+        cursor: default;
     }
     
     .header-searchbar{
@@ -69,6 +69,77 @@
     
     .header-profile .profile-icon svg{
         display: block;
+    }
+
+    [data-profile="true"]{
+        position: relative;
+        /* transition: 0.3s ease-in-out; */
+    }
+
+    [data-profile="true"]>.profile-icon{
+        visibility: hidden;
+    }
+    
+    [data-profile="true"] .profile-expand{
+        visibility: visible !important;
+        /* width: 100% !important;
+        height: 100% !important;
+        min-width: 15em;
+        min-height: 30em; */
+        width: 15em !important;
+        height: 30em !important;
+        background-color: var(--secondary);
+        color: var(--text);
+        position: absolute;
+        top: 1em;
+        right: 1em;
+        padding: 1em;
+        border-radius: 0.5em;
+    }
+
+    .profile-expand .profile-name{
+        justify-content: space-evenly;
+        font-size: 1.1em;
+        position: relative;
+        padding-top: 0.5em;
+    }
+
+    .profile-expand .profile-close{
+        position: absolute;
+        top: 0em;
+        right: 0em;
+        cursor: pointer;
+    }
+
+    .profile-expand .profile-links{
+        margin-top: 2em;
+        gap: 1em;
+    }
+    
+    .profile-expand .profile-links a{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1em;
+        width: 100%;
+        padding: 0.4em 1.5em;
+        border-radius: 0.5em;
+        transition: 0.2s ease-in-out;
+        text-decoration: none;
+        color: var(--text);
+    }
+
+    .profile-expand .profile-links a:hover{
+        background-color: var(--secondary-alt);
+    }
+
+    .profile-expand .profile-footer{
+        position: absolute;
+        bottom: 0em;
+        padding: 1em;
+        font-size: 0.8em;
+        text-align: center;
+        /* border-top: 1px solid var(--text-light); */
     }
 }
 

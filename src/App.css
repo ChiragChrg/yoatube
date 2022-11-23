@@ -3,6 +3,7 @@
   --secondary: #f2f2f2;
   --secondary-alt: #dadada;
   --text: #0f0f0f;
+  --text-light: rgba(15, 15, 15, 0.5);
   --logo: #ff0000;
 }
 
@@ -11,6 +12,7 @@
   --secondary: #212121;
   --secondary-alt: #282828;
   --text: #f1f1f1;
+  --text-light: rgba(241, 241, 241, 0.5);
 }
 
 *{
@@ -40,6 +42,18 @@
 
 .gap-2{
   gap: 2em;
+}
+
+.w-100{
+  width: 100%;
+}
+
+.start{
+  justify-content: flex-start;
+}
+
+.astart{
+  align-items: flex-start;
 }
 
 body{

@@ -3,38 +3,74 @@
     margin: 1em;
     margin-left: 14em;
     margin-right: 2em;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
-.dashboard-container{
+.dashboard-container {
     display: grid;
     gap: 1em;
 }
 
-@media (max-width: 396px){
+.skeleton-main{
+    margin-bottom: 0.5em;
+}
+
+.skeleton-thumb {
+    min-width: 200px;
+    min-height: 150px;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 16/9;
+    border-radius: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.skeleton-info{
+    display: flex;
+    justify-content: flex-start;
+    gap: 0.5em;
+    width: 100%;
+}
+
+.skeleton-text{
+    min-width: 200px;
+}
+
+@media (max-width: 600px){
     .dashboard-main{
         margin: 1em;
     }
 
-    .dashboard-container{
+    .dashboard-container {
+        margin: 0 0.5em;
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .skeleton-thumb {
+        min-width: 200px;
+        min-height: 180px;
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 16/9;
+        border-radius: 0.5em;
+        margin-bottom: 0.5em;
     }
 }
 
-@media (min-width: 396px){
-    .dashboard-container{
+@media (min-width: 601px){
+    .dashboard-container {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (min-width: 768px){
-    .dashboard-container{
+@media (min-width: 850px){
+    .dashboard-container {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
 @media (min-width: 1100px){
-    .dashboard-container{
+    .dashboard-container {
         grid-template-columns: repeat(4, 1fr);
     }
 }
