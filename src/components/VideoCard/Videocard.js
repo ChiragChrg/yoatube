@@ -23,6 +23,7 @@ const Videocard = ({ video }) => {
     const [channelData, setChannelData] = useState([]);
     let { hours, minutes, seconds } = parse(duration);
     seconds = seconds < 10 ? `0${seconds}` : seconds;
+    minutes = hours > 0 ? minutes < 10 ? `0${minutes}` : minutes : minutes;
     let timestamp;
     hours ? timestamp = `${hours || '0'}:${minutes || '00'}:${seconds || '00'}`
         : timestamp = `${minutes || '00'}:${seconds || '00'}`;
@@ -34,11 +35,16 @@ const Videocard = ({ video }) => {
     var publishDate = new Date(video.snippet.publishedAt);
     var currentDate = new Date();
     var diff = currentDate - publishDate;
+
+    var hrs = Math.floor(diff / (1000 * 60 * 60));
     var days = Math.floor(diff / (1000 * 60 * 60 * 24));
     var months = Math.floor(diff / (1000 * 60 * 60 * 24 * 30));
     var years = Math.floor(diff / (1000 * 60 * 60 * 24 * 365));
     var uploadDate;
-    if (days < 30) {
+    if (hrs < 24) {
+        uploadDate = `${hrs} hours ago`;
+    }
+    else if (days < 30) {
         uploadDate = `${days} days ago`;
     }
     else if (months < 12) {
@@ -52,7 +58,7 @@ const Videocard = ({ video }) => {
         const GetChannelData = async () => {
             const ChannelData = await axios.get(`/channels`, {
                 params: {
-                    part: 'snippet',
+                    part: 'snippet,statistics',
                     id: channelId,
                     key: process.env.REACT_APP_YT_API
                 }
@@ -63,10 +69,18 @@ const Videocard = ({ video }) => {
         GetChannelData();
     }, [channelId]);
 
+    var VideoProp = {
+        video,
+        channelData,
+        Title,
+        uploadDate,
+        views
+    }
+
 
     return (
         <div className='videocard-main'>
-            <Link to="/video" className='videocard-thumb'>
+            <Link to={`/watch=${video.id}`} className='videocard-thumb' state={VideoProp}>
                 <span className="videocard-timestamp">{timestamp}</span>
                 <img src={url} alt={title} />
             </Link>

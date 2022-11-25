@@ -27,6 +27,8 @@
         justify-content: start;
         padding: 0.5em 0.7em;
         border-radius: 0.5em;
+        text-decoration: none;
+        color: var(--text);
         transition: 0.2s ease-in-out;
     }
     

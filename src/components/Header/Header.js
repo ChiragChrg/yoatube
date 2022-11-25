@@ -9,6 +9,11 @@ import { Devbase } from "../../assets";
 
 const Header = () => {
     const [showProfile, setShowProfile] = useState(false);
+    if (showProfile) {
+        document.body.style.overflow = "hidden";
+    } else {
+        document.body.style.overflow = "unset";
+    }
 
     return (
         <div className="header-main flex">
@@ -33,7 +38,7 @@ const Header = () => {
                     <AiOutlineUser color="var(--text)" size={25} />
                 </div>
 
-                <div className="profile-expand" style={{ width: 0, height: 0, visibility: "hidden" }}>
+                <div className="profile-expand" style={{ display: "none" }}>
                     <div className="profile-name flex col gap-05">
                         <FaTimes className="profile-close" onClick={() => setShowProfile(false)} color="var(--text)" size={20} />
                         <div className="profile-icon">

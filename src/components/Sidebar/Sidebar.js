@@ -3,16 +3,17 @@ import "./SidebarM.css"
 import { HiHome } from "react-icons/hi"
 import { SiYoutubemusic } from "react-icons/si"
 import { Subscription, Library } from "../../assets/index"
+import { Link } from "react-router-dom"
 
 const Sidebar = () => {
     return (
         <div className="sidebar-main flex col gap-1">
-            <div className="sidebar-nav flex gap-1 active">
+            <Link to={"/"} className="sidebar-nav flex gap-1 active">
                 <div className="nav-icon">
                     <HiHome color="var(--text)" size={30} />
                 </div>
                 <span>Home</span>
-            </div>
+            </Link>
 
             <div className="sidebar-nav flex gap-1">
                 <div className="nav-icon">

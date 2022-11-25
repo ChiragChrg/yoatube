@@ -1,5 +1,7 @@
 import './App.css';
-import Content from './components/Content/Content';
+import Content from './components/Content';
+import Dashboard from './components/Dashboard/Dashboard';
+import Player from './components/Player/Player';
 import { BrowserRouter as Browser, Routes, Route } from "react-router-dom";
 function App() {
 
@@ -7,7 +9,10 @@ function App() {
     <div className="App">
       <Browser>
         <Routes>
-          <Route path="/" element={<Content />} />
+          <Route element={<Content />}>
+            <Route path="/" element={<Dashboard />} />
+            <Route path="/watch=:videoId" element={<Player />} />
+          </Route>
         </Routes>
       </Browser>
     </div>

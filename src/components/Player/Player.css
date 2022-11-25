@@ -1,0 +1,143 @@
+/* .Player-main{
+    background-color: #fff;
+} */
+
+.Player-player {
+    aspect-ratio: 16/9;
+}
+
+.Player-details{
+    background-color: var(--primary);
+    align-items: start;
+    padding: 0.5em;
+    letter-spacing: 1px;
+}
+
+.Player-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+    padding-top: 0.6em;
+}
+
+.Player-channel{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1em;
+    cursor: pointer;
+}
+
+.Player-ChLogo{
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 100%;
+}
+
+.Player-ChLogo img{
+    cursor: pointer;
+    border-radius: 100%;
+}
+
+.Player-channelInfo{
+    align-items: start;
+}
+
+.Player-channelInfo span{
+    color: var(--text-light);
+    font-size: 0.8em;
+}
+
+.Player-subBtn{
+    padding: 0.3em 0.8em;
+    border-radius: 5em;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+}
+
+.Player-subBtn.sub{
+    background-color: var(--secondary-alt);
+    color: var(--text);
+}
+
+.Player-subBtn.subbed{
+    background-color: var(--text);
+    color: var(--primary);
+}
+
+.Player-subBtn input{
+    border: none;
+    outline: none;
+    background: none;
+    color: inherit;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.Player-notification{
+    cursor: pointer;
+}
+
+.Player-LikeBtns{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.3em;
+    border-radius: 5em;
+    background-color: var(--secondary-alt);
+}
+
+.Player-like{
+    border-right: 1px solid var(--text-light);
+    margin-right: 0.5em;
+}
+
+.Player-like span{
+    pointer-events: none;
+}
+
+.Player-like,
+.Player-dislike{
+    padding: 0.1em 0.5em;
+    cursor: pointer;
+}
+
+
+/* Mobile Responsive CSS */
+@media (max-width: 600px){
+    .Player-info{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .Player-infoMobile{
+        width: 100%;
+        background-color: red;
+    }
+
+    .Player-LikeBtns{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background: none;
+    }
+    
+    .Player-like{
+        border: none;
+        margin-right: 2em;
+    }
+    
+    .Player-like,
+    .Player-dislike{
+        min-width: 8em;
+        min-height: 3em;
+        border-radius: 2em;
+        background-color: var(--secondary-alt);
+    }
+}

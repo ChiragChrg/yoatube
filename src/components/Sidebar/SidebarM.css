@@ -19,6 +19,8 @@
         gap: 0 !important;
         padding: 0.5em;
         border-radius: 0.5em;
+        text-decoration: none;
+        color: var(--text);
         transition: 0.2s ease-in-out;
     }
     
