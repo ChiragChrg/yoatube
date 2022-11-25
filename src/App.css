@@ -61,7 +61,7 @@ body{
   color: var(--text);
   height: 100%;
   width: 100vw;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 @media (min-width: 601px){
