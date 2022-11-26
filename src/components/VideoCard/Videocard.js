@@ -17,7 +17,8 @@ const Videocard = ({ video }) => {
     }
 
     //Thumbnail img
-    var url = thumbnails.maxres?.url || thumbnails.high?.url || thumbnails.medium?.url || thumbnails.standard?.url || thumbnails.default?.url;
+    // var url = thumbnails.maxres?.url || thumbnails.high?.url || thumbnails.medium?.url || thumbnails.standard?.url || thumbnails.default?.url;
+    var url = thumbnails.standard?.url || thumbnails.medium?.url || thumbnails.high?.url || thumbnails.default?.url || thumbnails.maxres?.url;
 
     //Timestamp formatting
     const [channelData, setChannelData] = useState([]);

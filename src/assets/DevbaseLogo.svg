@@ -1,6 +1,9 @@
 <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+	<title>DevbaseLogo</title>
 	<style>
 		.s0 { fill: #ffffff;stroke: #000000;stroke-width: 25 } 
 	</style>
-	<path id="Layer 1" class="s0" d="m387 154l64 101-205 132 146 196-95 72-223-298zm219-67l114 34-253 866-117-30zm175 340l217 295-308 203-64-103 202-133-145-196z"/>
+	<path id="Layer 3" class="s0" d="m1014 543l-285 288 138-288-144-294z"/>
+	<path id="Layer 3 copy" class="s0" d="m66 537l285-288-138 288 144 294z"/>
+	<path id="Layer 2" class="s0" d="m611.9 128.5l-96.2 369.3 148.2-64.5-110.8 443.7 46.2-5-88.7 107.8-48.2-130 44.5 20.6 47.7-294.2-148.1 83.3 93.5-545.4z"/>
 </svg>
