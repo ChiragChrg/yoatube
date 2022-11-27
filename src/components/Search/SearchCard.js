@@ -35,7 +35,7 @@ const SearchCard = ({ video }) => {
             });
         }
         GetVideoData();
-    }, [video.id.videoId]);
+    }, [video.id.videoId, channelId]);
     // console.log(videoData);
 
     //Dotter overflowing Title
