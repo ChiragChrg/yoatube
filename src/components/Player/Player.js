@@ -26,10 +26,11 @@ const Player = () => {
     const location = useLocation();
     const { videoId } = useParams();
     const { Title, channelData, video } = location.state;
+    console.log(location.state);
     // const { Title, channelData, uploadDate, video, views } = location.state;
 
     const videoUrl = `https://www.youtube.com/watch?v=${videoId}`;
-    const subscribers = Intl.NumberFormat('en', { notation: "compact" }).format(channelData.statistics.subscriberCount);
+    const subscribers = Intl.NumberFormat('en', { notation: "compact" }).format(channelData?.statistics?.subscriberCount);
     const likes = Intl.NumberFormat('en', { notation: "compact" }).format(video.statistics.likeCount);
 
     return (

@@ -1,6 +1,7 @@
 import "./Header.css"
 import "./HeaderM.css"
-import { useState } from "react";
+import { useState, useRef } from "react";
+import { useNavigate } from "react-router-dom";
 import { HiSearch } from "react-icons/hi"
 import { BsYoutube } from "react-icons/bs"
 import { AiOutlineUser } from "react-icons/ai"
@@ -9,10 +10,21 @@ import { Devbase } from "../../assets";
 
 const Header = () => {
     const [showProfile, setShowProfile] = useState(false);
+    const SearchRef = useRef(null);
+    const navigate = useNavigate();
+
     if (showProfile) {
         document.body.style.overflow = "hidden";
     } else {
         document.body.style.overflow = "unset";
+    }
+
+    const SearchQuery = (e) => {
+        e.preventDefault();
+        if (SearchRef.current.value !== "") {
+            navigate(`/search=${SearchRef.current.value}`);
+            SearchRef.current.value = "";
+        }
     }
 
     return (
@@ -28,10 +40,12 @@ const Header = () => {
                 </div>
             </div>
 
-            <div className="header-searchbar flex">
-                <input type="text" placeholder="Search" id="search" autoComplete="off" />
-                <HiSearch className="search-icon" color="var(--text)" size={25} />
-            </div>
+            <form onSubmit={SearchQuery} className="header-searchbar flex">
+                <input type="text" placeholder="Search" ref={SearchRef} id="search" autoComplete="off" />
+                <button type="submit">
+                    <HiSearch className="search-icon" color="var(--text)" size={25} />
+                </button>
+            </form>
 
             <div className="header-profile flex" data-profile={showProfile}>
                 <div className="profile-icon" onClick={() => setShowProfile(true)}>

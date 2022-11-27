@@ -17,7 +17,10 @@ const Dashboard = () => {
           part: 'snippet, contentDetails, statistics, player',
           chart: 'mostPopular',
           maxResults: 20,
-          key: process.env.REACT_APP_YT_API
+          key: process.env.REACT_APP_YT_API,
+          headers: {
+            'Cache-Control': 'max-age=2592000',
+          }
         }
       });
 
@@ -32,6 +35,7 @@ const Dashboard = () => {
 
   return (
     <div className='dashboard-main'>
+      <h1>Trending</h1>
       <div className="dashboard-container">
         {!loading ? trendingVideos.map((video) => {
           return <Videocard video={video} key={video.id + Math.random()} />

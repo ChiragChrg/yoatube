@@ -6,6 +6,13 @@
     /* overflow-x: hidden; */
 }
 
+.dashboard-main h1{
+    color:var(--logo);
+    padding-bottom: 0.1em;
+    margin-top: -0.3em;
+    letter-spacing: 2px;
+}
+
 .dashboard-container {
     display: grid;
     gap: 1em;

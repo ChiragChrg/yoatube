@@ -8,7 +8,7 @@ import { Link } from "react-router-dom"
 const Sidebar = () => {
     return (
         <div className="sidebar-main flex col gap-1">
-            <Link to={"/"} className="sidebar-nav flex gap-1 active">
+            <Link to={"/"} className="sidebar-nav flex gap-1 active" title="Home">
                 <div className="nav-icon">
                     <HiHome color="var(--text)" size={30} />
                 </div>

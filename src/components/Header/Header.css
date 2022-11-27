@@ -19,7 +19,7 @@
         top: 0;
         left: 0;
         width: 100%;
-        padding: 0.5em 1.8em;
+        padding: 0.8em 1.8em;
         z-index: 1;
         background-color: var(--primary);
         justify-content: space-between;
@@ -42,6 +42,15 @@
         max-width: 25em;
         margin: 0 2em;
         border-radius: 0.5em;
+    }
+
+    .header-searchbar button{
+        background: none;
+        border: none;
+        outline: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     
     #search{
