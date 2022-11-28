@@ -7,7 +7,8 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const SearchCard = ({ video }) => {
     const [videoData, setVideoData] = useState([]);
-    var { title, thumbnails, channelId, channelTitle, publishedAt } = video.snippet;
+    console.log(video);
+    var { title, thumbnails, channelId, channelTitle, publishedAt } = video?.snippet;
 
     useEffect(() => {
         const GetVideoData = async () => {

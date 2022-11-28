@@ -42,7 +42,7 @@ const Header = () => {
 
             <form onSubmit={SearchQuery} className="header-searchbar flex">
                 <input type="text" placeholder="Search" ref={SearchRef} id="search" autoComplete="off" />
-                <button type="submit">
+                <button type="submit" title="Search" >
                     <HiSearch className="search-icon" color="var(--text)" size={25} />
                 </button>
             </form>

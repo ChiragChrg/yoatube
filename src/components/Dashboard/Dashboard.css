@@ -8,7 +8,7 @@
 
 .dashboard-main h1{
     color:var(--logo);
-    padding-bottom: 0.1em;
+    padding-bottom: 0.3em;
     margin-top: -0.3em;
     letter-spacing: 2px;
 }
@@ -51,6 +51,12 @@
     .dashboard-container {
         margin: 0 0.5em;
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .dashboard-main h1{
+        padding: 0 0.3em;
+        padding-bottom: 0.3em;
+        font-size: 1.5em;
     }
 
     .skeleton-thumb {

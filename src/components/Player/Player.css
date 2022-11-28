@@ -108,6 +108,12 @@
     cursor: pointer;
 }
 
+@media (min-width: 1120px){
+    .Player-main{
+    margin-right: 30%;
+}
+}
+
 
 /* Mobile Responsive CSS */
 @media (max-width: 600px){
