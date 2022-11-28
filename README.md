@@ -2,8 +2,8 @@
 
 # YoaTube | The Better YouTube
 
-<!-- ### Preview -->
-<!-- ![SEM Preview](./frontend/src/Assets/Preview.png) -->
+### Preview
+![YoaTube Preview](./public/Preview.png)
 
 #### Languages
 <div align="center">
