@@ -35,7 +35,7 @@ const Player = () => {
 
     return (
         <div className='Player-main flex col'>
-            <ReactPlayer playing={false} className="Player-player" url={videoUrl} controls={true} width="100%" height="100%" />
+            <ReactPlayer playing={true} className="Player-player" url={videoUrl} controls={true} width="100%" height="100%" />
 
             <div className="Player-details flex col w-100">
                 <h3>{Title}</h3>
