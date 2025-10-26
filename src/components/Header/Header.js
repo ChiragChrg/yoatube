@@ -62,9 +62,9 @@ const Header = () => {
                     </div>
 
                     <div className="profile-links flex col">
-                        <a href="https://devbase.netlify.app/">
+                        <a href="https://chiragchrg.netlify.app/">
                             <Devbase fill="var(--text)" size={30} />
-                            <span>Devbase</span>
+                            <span>Portfolio</span>
                         </a>
                         <a href="https://github.com/ChiragChrg">
                             <FaGithub color="var(--text)" size={30} />
