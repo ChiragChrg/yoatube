@@ -5,10 +5,10 @@
     "dependencies": {
         "@emotion/react": "^11.14.0",
         "@emotion/styled": "^11.14.1",
-        "@mui/material": "^9.4.0",
+        "@mui/material": "^9.5.0",
         "@testing-library/jest-dom": "^7.0.1",
         "@testing-library/react": "^16.3.3",
-        "@testing-library/user-event": "^14.6.7",
+        "@testing-library/user-event": "^14.6.8",
         "axios": "^1.20.0",
         "react": "^19.3.0",
         "react-dom": "^19.3.0",
@@ -18,7 +18,7 @@
         "react-router-dom": "^7.18.4",
         "react-scripts": "5.0.1",
         "tinyduration": "^3.4.1",
-        "web-vitals": "^6.2.2"
+        "web-vitals": "^6.2.3"
     },
     "scripts": {
         "start": "react-scripts start",
